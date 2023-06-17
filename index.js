@@ -102,7 +102,7 @@ function startGame() {
 
   document.getElementById("winnerName").textContent = "";
 
-  drawInterval = setInterval(drawNumber, 120); 
+  drawInterval = setInterval(drawNumber, 1000); 
 }
 
 
@@ -165,7 +165,7 @@ function checkForWinner() {
       const winnerName = winners[0].name;
       winner = winners[0];
       clearInterval(drawInterval);
-      alert(`O jogador ${winnerName} venceu o BINGO!`);
+      alert(`O ganhador foi ${winnerName}, parabéns você venceu o BINGO!`);
     } else if (winners.length > 1) {
 
       clearInterval(drawInterval);
